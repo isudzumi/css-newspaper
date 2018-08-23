@@ -1,0 +1,23 @@
+#content{
+  flow-into: myFlow;
+  region-fragment: break;
+}
+
+.region {
+  flow-from: myFlow
+  width: 200px;
+  height: 100px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  background: #f7f2ec;
+}
+
+body {
+  background: #fff1e0;
+  display: grid;
+  grid-gap: 50px;
+}
+
+* {
+  box-sizing: border-box; 
+}

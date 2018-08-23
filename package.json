@@ -1,0 +1,15 @@
+{
+  "name": "css-newspaper",
+  "version": "1.0.0",
+  "description": "Making newspaper using css",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "isudzumi@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "css-regions-polyfill": "FremyCompany/css-regions-polyfill",
+    "parcel-bundler": "^1.9.7"
+  }
+}
