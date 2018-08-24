@@ -4,6 +4,7 @@
   "description": "Making newspaper using css",
   "main": "index.html",
   "scripts": {
+    "start-dev": "parcel ./src/index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "isudzumi@gmail.com",
