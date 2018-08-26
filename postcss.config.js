@@ -1,7 +1,8 @@
-const autoPrefixer = require("autoprefixer");
+const autoprefixer = require('autoprefixer')
 const postcssPresetEnv = require("postcss-preset-env");
 const postcssImport = require("postcss-import");
 const postcssReporter = require("postcss-reporter");
+const postcssNested = require('postcss-nested')
 const styleLint = require("stylelint");
 
 module.exports = {
@@ -9,7 +10,8 @@ module.exports = {
     postcssImport({
       plugins: [styleLint]
     }),
-    postcssPresetEnv(autoPrefixer({ grid: true })),
-    postcssReporter({ clearReportedMessages: true })
+    postcssPresetEnv({autoprefixer: { grid: true }, stage: 0}),
+    postcssReporter({ clearReportedMessages: true }),
+    postcssNested
   ]
 };
