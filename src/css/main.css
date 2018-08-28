@@ -35,6 +35,10 @@ div.section {
 
   writing-mode: vertical-rl;
 
+  & p {
+      text-indent: 1em;
+  }
+
   &-1 {
     writing-mode: horizontal-tb;
     grid-row: 1 / 5;
@@ -141,6 +145,42 @@ div.section {
         flex-direction: row;
         justify-content: space-between;
     }
+  }
+
+  &-5 {
+    grid-row: 2 / 7;
+    grid-column: 98 / 115;
+    padding: 20px;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    & > .article-1 {
+        align-items: center;
+
+        &--title {
+            font-size: 54px;
+            transform: scale(1.5, 1);
+            font-weight: bold;
+        }
+
+        &--subtitle {
+            font-size: 40px;
+
+            & .small {
+                font-size: 30px;
+                padding-bottom: 5px;
+            }
+        }
+    }
+  }
+
+  &-6 {
+    grid-row: 2 / 6;
+    grid-column: 90 / 98;
+    background: lightgray;
+    padding: 20px 0;
   }
 }
 
