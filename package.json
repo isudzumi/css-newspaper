@@ -11,6 +11,7 @@
   "license": "MIT",
   "dependencies": {
     "css-regions-polyfill": "FremyCompany/css-regions-polyfill",
+    "pagedjs": "^0.1.12",
     "parcel-bundler": "^1.9.7"
   },
   "devDependencies": {
