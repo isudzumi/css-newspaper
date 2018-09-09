@@ -17,8 +17,14 @@ p {
   transform: scale(calc(10.8 / 8.6 * 0.5), 0.6);
   transform-origin: top right;
   margin: 0;
+  height: 170%;
 }
 
+.continued {
+  & p:first-child {
+    text-indent: 0;
+  }
+}
 
 @page paper {
   size: var(--paper-width) var(--paper-height);
@@ -53,6 +59,7 @@ section.paper {
 div.section {
 
   writing-mode: vertical-rl;
+  text-orientation: upright;
 
   &-1 {
     writing-mode: horizontal-tb;
@@ -264,16 +271,6 @@ div.section {
       grid-column: 74 / span 41;
       background: lightgray;
   }
-}
-
-.content {
-    &-1 {
-        flow-from: aaa;
-    }
-}
-
-#test {
-    flow-into: aaa;
 }
 
 .card-head {
