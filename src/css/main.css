@@ -32,6 +32,27 @@ p {
   size: var(--paper-width) var(--paper-height);
   marks: crop cross;
   margin: 10mm;
+
+  @top-center {
+    content: "日本経済新聞";
+    letter-spacing: 1em;
+    transform: scale(0.8, 0.5);
+    margin-top: 28px;
+  }
+}
+
+@page :left {
+  @top-left {
+    content: counter(page);
+    margin-top: 28px;
+  }
+}
+
+@page :right {
+  @top-right {
+    content: counter(page);
+    margin-top: 28px;
+  }
 }
 
 .pagedjs_pages {
@@ -202,9 +223,13 @@ div.section {
 
         &--subtitle {
             font-size: 20px;
+            font-family: serif;
+            font-weight: bold;
 
             & .small {
                 font-size: 15px;
+                font-family: sans-serif;
+                font-weight: normal;
                 padding-bottom: 5px;
             }
         }
@@ -361,6 +386,11 @@ div.section {
 
     &--company {
       font-size: 8px;
+    }
+
+    &--subtitle {
+      font-family: serif;
+      font-weight: bold;
     }
   }
 
@@ -576,6 +606,7 @@ div.section {
 
       writing-mode: horizontal-tb;
       font-size: 19px;
+      font-family: serif;
     }
 
     &--image {
